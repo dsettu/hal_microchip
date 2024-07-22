@@ -1,3 +1,9 @@
 add_subdirectory_ifdef(CONFIG_HAS_MEC_HAL mec)
 add_subdirectory_ifdef(CONFIG_HAS_MPFS_HAL mpfs)
 add_subdirectory_ifdef(CONFIG_HAS_MEC5_HAL mec5)
+zephyr_include_directories_ifdef(CONFIG_HAS_PIC32C_HAL dts)
+add_subdirectory_ifdef(CONFIG_SOC_PIC32CM1216MC00048 mcu/dfp/PIC32CM-MC_DFP/1.4.67/PIC32CM1216MC00048)
+#add_subdirectory_ifdef(CONFIG_SOC_PIC32CM1216MC00048 mcu/dfp/SAMC21_DFP/3.8.119/samc21n)
+#add_subdirectory_ifdef(CONFIG_SOC_PIC32CM1216MC00048 mcu/dfp)
+
+
